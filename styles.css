@@ -1,0 +1,87 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+}
+body {
+    display:flex;
+}
+.logo {
+    font-family: Norse-Bold;
+    padding: 30px 0;
+    font-size: 6em;
+    letter-spacing: 5px;
+}
+.alpha {
+    background-color: rgba(35, 86, 123, .6);
+    position: absolute;
+    width: 35vw;
+    height: 150px;
+    top: 15rem;
+    color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+.alpha>img {
+    width: auto;
+    height: auto;
+    padding: 10px;
+}
+div.left {
+    width: 35vw;
+    height: auto;
+    background-color: black;
+}
+div.content {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+div>img {
+    height: 100vh;
+    width: 35vw;
+    object-fit: cover;
+}
+div.top>p {
+    font-size: 2rem;
+    font-weight: bold;
+    padding: 60px 40px
+}
+div.middle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    flex-grow: 2;
+}
+div.bottom, div.top {
+    background-color: rgb(26, 26, 26);
+    flex-grow: 1;
+}
+.bottom {
+    padding: 3rem 5rem 0 5rem;
+}
+ul {
+    list-style-type: none;
+    flex-direction: column;
+    padding: 30px, 0;
+}
+form {
+    display: flex;
+}
+li {
+    padding: 10px 50px;
+    letter-spacing: 2px;
+}
+label {
+    font-size: .7em;
+}
+p {
+    padding-top: 2rem;
+}
+@font-face {
+    font-family: Norse-Bold;
+    src: url(Norse-Bold.otf) format(opentype);
+}
