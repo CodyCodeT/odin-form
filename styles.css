@@ -81,6 +81,15 @@ label {
 p {
     padding-top: 2rem;
 }
+button {
+    height: 3rem;
+    width: 10rem;
+    border: 3px;
+    border-radius: 4px;
+    background-color:  rgb(35, 86, 123);
+    font-size: 1.2rem;
+    font-weight: bold;
+}
 @font-face {
     font-family: Norse-Bold;
     src: url(Norse-Bold.otf) format(opentype);
