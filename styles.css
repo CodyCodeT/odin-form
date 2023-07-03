@@ -30,8 +30,8 @@ body {
     padding: 10px;
 }
 div.left {
+    height: 100vh;
     width: 35vw;
-    height: auto;
     background-color: black;
 }
 div.content {
@@ -39,10 +39,11 @@ div.content {
     flex-direction: column;
     flex-grow: 1;
 }
-div>img {
-    height: 100vh;
-    width: 35vw;
-    object-fit: cover;
+div.left>img {
+    min-height: 100%;
+    max-width: 99vw;
+    min-width: 1920px;
+    object-fit: fill;
 }
 div.top>p {
     font-size: 2rem;
@@ -77,6 +78,8 @@ li {
 }
 label {
     font-size: .7em;
+    font-weight: 700;
+    padding-left: 3px;
 }
 p {
     padding-top: 2rem;
@@ -89,6 +92,18 @@ button {
     background-color:  rgb(35, 86, 123);
     font-size: 1.2rem;
     font-weight: bold;
+}
+button:hover {
+    background-color: rgba(35, 86, 123, .6);
+    cursor: pointer;
+}
+input {
+    border-radius: 4px;
+    padding: .3rem;
+    color: black;
+}
+input:focus {
+    background-color: rgba(198, 231, 255, 0.612);
 }
 @font-face {
     font-family: Norse-Bold;
